@@ -9,9 +9,9 @@ end
 def kind 
  if (@side_a == @side_b) && (@side_b == @side_c) 
     :equilateral
-  elsif @side_a == @side_b || @side_a == @side_c || @side_c == @side_b 
+  elsif (@side_a == @side_b) || (@side_a == @side_c) || (@side_c == @side_b) 
     :isosceles
- else @side_a !== @side_b && @side_a !== @side_c && @side_b !== @side_c
+ else (@side_a != @side_b) && (@side_a != @side_c) && (@side_b != @side_c)
    return :scalene
  end 
 end 
