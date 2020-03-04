@@ -19,6 +19,7 @@ def kind
  else (@side_a != @side_b) && (@side_a != @side_c) && (@side_b != @side_c)
    return :scalene
  end 
+ end 
 end 
 
 class TriangleError < StandardError
